@@ -1,0 +1,81 @@
+/* Estilos específicos para o formulário */
+.contato-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 2rem;
+}
+
+.formulario-contato {
+    background: white;
+    color: var(--cor-texto-preto);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+.campo {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+    padding: 0.8rem;
+    border: 2px solid #f0f0f0;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-family: var(--fonte);
+    resize: none;
+    cursor: text;
+}
+
+.campo select {
+    cursor: pointer;
+}
+
+.campo input:focus, .campo textarea:focus {
+    border-color: var(--cor-botoes-links);
+    outline: none;
+}
+
+.btn-enviar {
+    background-color: var(--cor-botoes-links);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-enviar:hover {
+    background-color: var(--cor-botoes-links);
+}
+
+.info-adicional {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--cor-texto-preto);
+}
+
+@media (max-width: 768px) {
+    .contato-container {
+        grid-template-columns: 1fr;
+    }
+}
