@@ -1,0 +1,195 @@
+:root {
+    --fonte: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    --cor-texto-branco: #ffffff;
+    --cor-texto-preto: #000000;
+    --cor-de-fundo: #131313;
+    --cor-de-fundo-card: #10297a;
+    --cor-botoes-links: #5d82ff;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--fonte);
+    font-size: 1rem;
+    color: var(--cor-texto-branco);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    background-color: var(--cor-de-fundo);
+}
+
+.cabecalho .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cabecalho .menu ul li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor-texto-branco);
+    cursor: pointer;
+}
+
+.cabecalho .menu ul li a i {
+    color: var(--cor-botoes-links);
+    padding-right: .4rem;
+    cursor: pointer;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.principal .carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.principal .carrossel-imagem {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.principal .carrossel-imagem.ativa {
+    opacity: 1;
+    position: relative;
+    /* Mantém o tamanho do container */
+}
+
+.principal .carrossel-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.principal #carrossel-botao-voltar,
+.principal #carrossel-botao-proxima {
+    position: absolute;
+    background: none;
+}
+
+.principal #carrossel-botao-voltar i,
+.principal #carrossel-botao-proxima i {
+    color: var(--cor-botoes-links);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.principal #carrossel-botao-voltar {
+    left: 10px;
+}
+
+.principal #carrossel-botao-proxima {
+    right: 10px;
+}
+
+.principal .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--cor-texto-preto);
+    padding: 6rem 4rem;
+    gap: .8rem;
+}
+
+.principal .info .linguagens {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1rem;
+ 
+}
+
+.principal .info .linguagens .lang-card {
+    background-color: var(--cor-de-fundo-card);
+    color: var(--cor-texto-branco);
+    font-size: 1.1rem;
+    padding: 1rem;   
+    border-radius: .5rem;
+}
+
+.principal .info .linguagens .lang-card:hover{
+ 
+}
+
+.principal .info .link-agendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-botoes-links);
+    cursor: pointer;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-de-fundo);
+    padding: 1rem 4rem;
+}
+
+.rodape .contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.rodape .contato .numero {
+    display: flex;
+    align-items: center;
+}
+
+.rodape .redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.rodape .redes-sociais .redes-sociais-icons {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.rodape i {
+    font-size: 1.5rem;
+    color: var(--cor-botoes-links);
+    padding-right: .5rem;
+    cursor: pointer;
+}
+
+.rodape .direitos,
+.rodape .contato .numero {
+    font-size: 1.1rem;
+}
