@@ -112,6 +112,10 @@
     width: 100%;
 }
 
+.btn-enviar:hover{
+    filter: brightness(50%);
+}
+
 .banner-vantagem {
     margin-top: 2rem;
     color: #666;
