@@ -1,0 +1,136 @@
+.principal h2, .principal p{
+    text-align: center;
+}
+
+.agendar-container {
+    background: white;
+    color: var(--cor-texto-preto);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.passos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.passo {
+    background: #eee;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.passo.ativo {
+    background: var(--cor-de-fundo-card);
+    color: white;
+}
+
+.linha-passo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #eee;
+    z-index: 1;
+}
+
+.form-agendar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-agendar .campo{
+    margin-bottom: 1.2rem;
+}
+
+.form-agendar label {
+    font-weight:900;
+    color: #555;
+    font-size: 1rem;
+}
+
+.form-agendar input,
+.form-agendar select {
+    padding: 0.8rem;
+    border: 2px solid #f0f0f0;
+    border-radius: 0.6rem;
+    transition: 0.3s;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-agendar input{
+    cursor: text;
+}
+
+.form-agendar input:focus {
+    border-color: var(--cor-botoes-links);
+    outline: none;
+}
+
+.tipo-aula {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.radio-box {
+    border: 2px solid #f0f0f0;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.radio-box input, .radio-box p{
+    cursor: pointer;
+}
+
+.radio-box:hover {
+    border-color: var(--cor-botoes-links);
+}
+
+.btn-enviar{   
+    background-color: var(--cor-botoes-links);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-enviar:hover{
+    filter: brightness(50%);
+}
+
+.banner-vantagem {
+    margin-top: 2rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
