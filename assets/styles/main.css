@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-    --fonte: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --fonte: Poppins, serif;
 
     --cor-texto-branco: #ffffff;
     --cor-texto-preto: #000000;
@@ -172,6 +174,12 @@ body {
     transition: transform 0.5s ease;
 }
 
+.principal .info .linguagens .lang-card ul {
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
 .principal .info .linguagens .lang-card:hover {
     transform: scale(1.1);
 }
@@ -197,6 +205,21 @@ body {
 
 .principal .info .link-agendar:hover {
     filter: brightness(50%)
+}
+
+.principal .info .aulas {
+    margin-top: 5rem;
+    background: var(--cor-de-fundo-card);
+    padding: 2rem;
+    border-radius: 1rem;
+    color: var(--cor-texto-branco);
+    border: .2rem solid var(--cor-texto-preto);
+}
+
+.principal .info .aulas .tipos .tipo{
+    display: flex;
+    align-items: center;
+    gap: .5rem
 }
 
 .contato-container .info-adicional .card-contato .link-whatsapp {
