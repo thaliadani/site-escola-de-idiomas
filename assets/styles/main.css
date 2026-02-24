@@ -21,7 +21,6 @@ body {
     font-size: 1rem;
     color: var(--cor-texto-branco);
     background-color: var(--cor-de-fundo-corpo);
-
 }
 
 .cabecalho {
@@ -58,7 +57,7 @@ body {
 }
 
 .cabecalho .menu ul li a {
-    font-size: 1.2rem;
+    font-weight: bolder;
     text-decoration: none;
     color: var(--cor-texto-branco);
     cursor: pointer;
@@ -270,7 +269,7 @@ body {
 }
 
 .rodape i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--cor-botoes-links);
     padding-right: .5rem;
     cursor: pointer;
@@ -280,10 +279,6 @@ body {
     filter: brightness(50%)
 }
 
-.rodape .direitos,
-.rodape .contato .numero {
-    font-size: 1.1rem;
-}
 
 @media (max-width: 768px) {
     .cabecalho {
