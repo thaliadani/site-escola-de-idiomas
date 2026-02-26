@@ -1,17 +1,25 @@
+
+
 .contato-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     margin-top: 2rem;
+    align-items: start;
+    /* Evita que uma coluna estique a outra verticalmente */
 }
 
 .formulario-contato {
     background: white;
     color: var(--cor-texto-preto);
-    padding: 1.5rem;
+    padding: 2rem;
+    /* Aumentado para melhor respiro */
     border-radius: 1.5rem;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    width: 80%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Ocupa a coluna do grid inteira */
+    box-sizing: border-box;
+    /* Garante que o padding não quebre a largura */
 }
 
 .campo {
@@ -21,7 +29,7 @@
 }
 
 .campo label {
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
@@ -32,18 +40,19 @@
     border: 2px solid #f0f0f0;
     border-radius: 0.6rem;
     font-size: 1rem;
-    font-family: var(--fonte);
-    resize: none;
-    cursor: text;
+    font-family: inherit;
+    /* Usa a fonte do projeto */
+    resize: vertical;
+    /* Permite redimensionar apenas na vertical */
+    transition: border-color 0.3s ease;
 }
 
-.campo select {
-    cursor: pointer;
-}
-
-.campo input:focus, .campo textarea:focus {
+.campo input:focus,
+.campo textarea:focus,
+.campo select:focus {
     border-color: var(--cor-botoes-links);
     outline: none;
+    background-color: #fafafa;
 }
 
 .btn-enviar {
@@ -51,17 +60,24 @@
     color: white;
     padding: 1rem;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonte);
     font-size: 1rem;
-    font-weight: bolder;
-    transition: 0.3s;
+    font-weight: bold;
+    transition: transform 0.2s, filter 0.2s;
     width: 100%;
 }
 
 .btn-enviar:hover {
-    filter: brightness(50%);
+    filter: brightness(1.1);
+    /* Fica levemente mais claro */
+    transform: translateY(-2px);
+    /* Efeito de elevação */
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
 }
 
 .info-adicional {
@@ -71,8 +87,16 @@
     color: var(--cor-texto-preto);
 }
 
-@media (max-width: 768px) {
+/* Responsividade */
+@media (max-width: 900px) {
+
+    /* Aumentei o breakpoint para não esmagar o conteúdo */
     .contato-container {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .formulario-contato {
+        width: 100%;
     }
 }
