@@ -1,14 +1,10 @@
 .contato-container {
     display: flex;
     flex-wrap: wrap;
-    /* Permite que os itens quebrem linha no mobile */
     gap: 3rem;
     margin-top: 2rem;
-    justify-content: center;
-    /* Centraliza o conteúdo se houver espaço sobressalente */
 }
 
-/* Ajuste das colunas para ocuparem o espaço proporcionalmente */
 .formulario-contato,
 .info-adicional {
     flex: 1 1 400px;
@@ -67,9 +63,6 @@
     font-weight: bold;
     transition: 0.3s;
     width: 100%;
-    display: flex;
-    /* Flex interno para alinhar ícones se houver */
-    justify-content: center;
 }
 
 .btn-enviar:hover {
@@ -82,9 +75,7 @@
     flex-direction: column;
     gap: 2rem;
 }
-
-/* No Flexbox, a responsividade é tratada naturalmente pelo flex-wrap, 
-                                                                                                                                                                                                       mas podemos ajustar o gap para telas pequenas */
+                                                                                                                           
 @media (max-width: 600px) {
     .contato-container {
         gap: 1.5rem;
