@@ -163,6 +163,10 @@ body {
     transform: translateY(-10px);
 }
 
+.principal .info .aulas .tipos{
+    display:flex;
+}
+
 .principal .info .link-agendar {
     display: block;
     text-align: center;
