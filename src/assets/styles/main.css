@@ -87,17 +87,16 @@ body {
     max-width: 800px;
     height: 400px;
     margin: 5rem auto 0;
-    overflow: hidden;
-    display: flex;
+    display: flex; /* Alinha botões e imagens horizontalmente */
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Joga os botões para as pontas */
+    overflow: hidden;
     z-index: 1;
-    /* Baixado para não sobrepor o menu */
 }
 
 .principal .carrossel-imagem {
     position: absolute;
-    width: 85%;
+    width: 80%;
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -110,7 +109,6 @@ body {
 .principal .carrossel-imagem.ativa {
     opacity: 1;
     z-index: 2;
-    position: absolute;
 }
 
 .principal .carrossel-imagem img {
@@ -124,15 +122,25 @@ body {
 .principal #carrossel-botao-proxima {
     background: none;
     border: none;
-    padding: 0 .5rem;
-    z-index: 10;
+    padding: 0 1rem;
+    cursor: pointer;
+    z-index: 10; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .principal #carrossel-botao-voltar i,
 .principal #carrossel-botao-proxima i {
     color: var(--cor-botoes-links);
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
+}
+
+.principal #carrossel-botao-voltar i:hover,
+.principal #carrossel-botao-proxima i:hover {
+    transform: scale(1.1);
+    filter: brightness(80%);
 }
 
 /* Info e Cards */
@@ -261,12 +269,16 @@ body {
     /* Ajustes de conteúdo para não sumir atrás do header fixo */
     .principal .carrossel {
         height: 250px;
-        margin-top: 2rem;
     }
 
     .principal .carrossel-imagem{
-        width:90%;
+        width:75%;
     }
+
+    .principal #carrossel-botao-voltar i,
+        .principal #carrossel-botao-proxima i {
+                font-size: 2rem;
+                    }
 
     .principal .info {
         padding: 2rem 1.5rem;
