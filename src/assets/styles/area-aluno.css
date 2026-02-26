@@ -60,12 +60,13 @@
 
 .sidebar-aluno a {
     text-decoration: none;
-    color: #555;
+    color: var(--cor-texto-preto);
     display: flex;
     align-items: center;
     gap: 0.8rem;
     font-weight: bold;
     transition: 0.3s;
+    cursor:pointer;
 }
 
 .sidebar-aluno a:hover,
@@ -150,4 +151,5 @@
         display: none;
         /* Em sistemas reais, aqui viria um menu lateral mobile */
     }
+
 }
