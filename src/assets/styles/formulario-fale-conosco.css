@@ -26,20 +26,6 @@
     /* Garante que não fique pequeno demais antes de quebrar */
 }
 
-.formulario-contato .info-adicional .card-contato div{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.formulario-contato .info-adicional .card-contato div i,.formulario-contato .info-adicional .card-contato div h3{
-    font-size: 1.2rem;   
-}
-
-.formulario-contato .info-adicional .card-contato div i{
-    color: var(--cor-botoes-links);
-}
-
 .campo {
     margin-bottom: 1.5rem;
     display: flex;
