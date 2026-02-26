@@ -210,7 +210,7 @@ body {
   align-items: center;
 }
 
-.principal .info .aulas .tipos{
+.principal .info .aulas .tipos .tipo{
     flex-direction:row;
     gap:.5rem;
 }
