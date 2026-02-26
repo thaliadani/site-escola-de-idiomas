@@ -163,8 +163,9 @@ body {
     transform: translateY(-10px);
 }
 
-.principal .info .aulas .tipos{
+.principal .info .aulas .tipos .tipo{
     display:flex;
+    gap:.5rem;
 }
 
 .principal .info .link-agendar {
