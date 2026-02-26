@@ -295,6 +295,7 @@ body {
         position: absolute;
         width:100%;
         height:100%;
+        z-index: 1000;
         background-color: var(--cor-de-fundo);
         padding: 1rem;
         border-radius: .5rem;
