@@ -293,10 +293,10 @@ body {
     .cabecalho #menu {
         display: none;
         position: absolute;
-        z-index: 6;
+        z-index: -4;
         background-color: var(--cor-de-fundo);
         padding: 1rem;
-        margin-right:1rem;
+        margin-right:.4rem;
         right: 0;
         border-radius: .5rem;
         flex-direction: column;
