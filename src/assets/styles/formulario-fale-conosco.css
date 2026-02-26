@@ -9,6 +9,15 @@
     margin-top: 2rem;
 }
 
+.formulario-contato {
+    background: white;
+    color: var(--cor-texto-preto);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
 .formulario-contato,
 .info-adicional {
     flex: 1 1 400px;
@@ -17,13 +26,8 @@
     /* Garante que não fique pequeno demais antes de quebrar */
 }
 
-.formulario-contato {
-    background: white;
-    color: var(--cor-texto-preto);
-    padding: 2rem;
-    border-radius: 1.5rem;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+.formulario-contato .info-adicional .card-contato i{
+    color: var(--cor-botoes-links);
 }
 
 .campo {
@@ -79,7 +83,7 @@
     flex-direction: column;
     gap: 2rem;
 }
-                                                                                                                           
+                
 @media (max-width: 600px) {
     .contato-container {
         gap: 1.5rem;
