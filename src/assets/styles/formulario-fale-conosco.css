@@ -1,25 +1,29 @@
-
-
 .contato-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem linha no mobile */
     gap: 3rem;
     margin-top: 2rem;
-    align-items: start;
-    /* Evita que uma coluna estique a outra verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo se houver espaço sobressalente */
+}
+
+/* Ajuste das colunas para ocuparem o espaço proporcionalmente */
+.formulario-contato,
+.info-adicional {
+    flex: 1 1 400px;
+    /* Cresce, encolhe e tem base de 400px */
+    min-width: 300px;
+    /* Garante que não fique pequeno demais antes de quebrar */
 }
 
 .formulario-contato {
     background: white;
     color: var(--cor-texto-preto);
     padding: 2rem;
-    /* Aumentado para melhor respiro */
     border-radius: 1.5rem;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    /* Ocupa a coluna do grid inteira */
     box-sizing: border-box;
-    /* Garante que o padding não quebre a largura */
 }
 
 .campo {
@@ -41,18 +45,14 @@
     border-radius: 0.6rem;
     font-size: 1rem;
     font-family: inherit;
-    /* Usa a fonte do projeto */
-    resize: vertical;
-    /* Permite redimensionar apenas na vertical */
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .campo input:focus,
-.campo textarea:focus,
-.campo select:focus {
+.campo textarea:focus {
     border-color: var(--cor-botoes-links);
     outline: none;
-    background-color: #fafafa;
+    background-color: #f9f9f9;
 }
 
 .btn-enviar {
@@ -65,38 +65,32 @@
     font-family: var(--fonte);
     font-size: 1rem;
     font-weight: bold;
-    transition: transform 0.2s, filter 0.2s;
+    transition: 0.3s;
     width: 100%;
+    display: flex;
+    /* Flex interno para alinhar ícones se houver */
+    justify-content: center;
 }
 
 .btn-enviar:hover {
     filter: brightness(1.1);
-    /* Fica levemente mais claro */
-    transform: translateY(-2px);
-    /* Efeito de elevação */
-}
-
-.btn-enviar:active {
-    transform: translateY(0);
+    transform: translateY(-3px);
 }
 
 .info-adicional {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    color: var(--cor-texto-preto);
 }
 
-/* Responsividade */
-@media (max-width: 900px) {
-
-    /* Aumentei o breakpoint para não esmagar o conteúdo */
+/* No Flexbox, a responsividade é tratada naturalmente pelo flex-wrap, 
+                                                                                                                                                                                                       mas podemos ajustar o gap para telas pequenas */
+@media (max-width: 600px) {
     .contato-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .formulario-contato {
-        width: 100%;
+        padding: 1.5rem;
     }
 }
