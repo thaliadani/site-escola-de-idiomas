@@ -44,7 +44,7 @@
             <p>Experimente nossa metodologia na prática, sem compromisso.</p>
 
             <div class="agendar-container">
-                <form class="form-agendar" onsubmit="alert('Aula agendada!')">
+                <form class="form-agendar" onsubmit="mostrarMensagem()">
                     <div class="campo">
                         <label>Como prefere sua aula?</label>
                         <div class="tipo-aula">
@@ -80,7 +80,7 @@
                         </select>
                     </div>
 
-                    <button type="submit" class="btn-enviar">Solicitar Agendamento</button>
+                    <button type="submit" id="btn-enviar">Solicitar Agendamento</button>
 
                     <div class="banner-vantagem">
                         <i class="bi bi-shield-check" style="color: green;"></i>
@@ -90,19 +90,19 @@
             </div>
         </section>
 
-        <section class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1"
+        <section class="modal modal-sheet position-static d-none bg-body-secondary p-4 py-md-5" tabindex="-1"
             role="dialog" id="modalSheet">
             <div class="modal-dialog">
                 <div class="modal-content rounded-4 shadow">
                     <div class="modal-header border-bottom-0">
                         <h1 class="modal-title fs-5">Agendamento solicitado com sucesso!</h1> <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
+                            data-bs-dismiss="modal" aria-label="Close" id="btn-fechar"></button>
                     </div>
                     <div class="modal-body py-0">
                         <p>Um do nossos atendentes entrarão em contato em breve.</p>
                     </div>
                     <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
-                        <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal" id="btn-fechar">Fechar</button>
                     </div>
                 </div>
             </div>

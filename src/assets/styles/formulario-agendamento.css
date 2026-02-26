@@ -112,7 +112,7 @@
     border-color: var(--cor-botoes-links);
 }
 
-.btn-enviar{   
+#btn-enviar{   
     background-color: var(--cor-botoes-links);
     color: white;
     padding: 1rem;
@@ -126,7 +126,7 @@
     width: 100%;
 }
 
-.btn-enviar:hover{
+#btn-enviar:hover{
     filter: brightness(50%);
 }
 
