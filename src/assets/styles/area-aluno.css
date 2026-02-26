@@ -12,7 +12,7 @@
     display: none !important;
 }
 
-.principal .info{
+.principal{
     align-items:center;
 }
 
@@ -157,4 +157,5 @@
     }
 
 }
+
 
