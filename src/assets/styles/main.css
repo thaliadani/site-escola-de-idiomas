@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* --- ESTILOS GERAIS --- */
 :root {
     --fonte: 'Poppins', sans-serif;
     --cor-texto-branco: #ffffff;
@@ -10,7 +11,6 @@
     --cor-botoes-links: #2988c9;
 }
 
-/* --- ESTILOS GERAIS --- */
 body {
     display: flex;
     flex-direction: column;
@@ -254,7 +254,6 @@ body {
     /* Menu Overlay Mobile */
     .cabecalho #menu {
         display: none;
-        /* Escondido por padrão */
         position: fixed;
         top: 0;
         left: 0;
@@ -262,7 +261,6 @@ body {
         height: 100vh;
         background-color: var(--cor-de-fundo);
         z-index: 1000;
-        /* Acima de tudo */
         flex-direction: column;
         justify-content: center;
         align-items: center;
