@@ -7,11 +7,12 @@
     --cor-texto-preto: #000000;
     --cor-de-fundo: #131313;
     --cor-de-fundo-corpo: #f8f8f8;
-    --cor-de-fundo-card: #104b72;
+    --cor-de-fundo-card: #2988c9;
     --cor-botoes-links: #2988c9;
 }
 
 body {
+    z-index: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
