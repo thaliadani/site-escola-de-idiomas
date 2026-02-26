@@ -212,6 +212,11 @@ body {
   align-items: center;
 }
 
+.principal .info .aulas .tipos .tipo{
+    display:flex;
+    gap:.5rem;
+}
+
 .rodape {
     display: flex;
     align-items: center;
@@ -293,7 +298,7 @@ body {
         z-index: 2;
         background-color: var(--cor-de-fundo);
         padding: 1rem;
-        left: 1;
+        left: 0;
         border-radius: .5rem;
         flex-direction: column;
         align-items: flex-start;
