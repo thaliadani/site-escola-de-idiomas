@@ -213,6 +213,11 @@ body {
     gap: .5rem;
 }
 
+.rodape .contato h3,
+.rodape .redes-sociais h3{
+    font-size: 1.2rem;
+}
+
 .rodape i {
     font-size: 1.2rem;
     color: var(--cor-botoes-links);
