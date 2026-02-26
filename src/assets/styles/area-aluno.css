@@ -1,31 +1,24 @@
 .cabecalho #menu {
     display: flex !important;
     position: static !important;
-    /* Remove o overlay/posição fixa */
     height: auto !important;
     width: auto !important;
     background-color: transparent !important;
     flex-direction: row !important;
-    /* Mantém um ao lado do outro ou alinhado */
     padding: 0 !important;
     animation: none !important;
 }
-
-/* 2. Esconde o botão hambúrguer nesta página específica */
 .cabecalho #btn-menu-hamburguer {
     display: none !important;
 }
 
-/* 3. Ajuste fino para o link de "Sair" no mobile */
 @media (max-width: 768px) {
     .cabecalho {
         padding: 1rem 1.5rem;
-        /* Reduz um pouco o respiro lateral no mobile */
     }
 
     .cabecalho #menu li a {
         font-size: 0.9rem;
-        /* Diminui um pouco a fonte para caber melhor */
         border: 1px solid var(--cor-botoes-links);
         padding: 0.5rem 1rem;
         border-radius: 5px;
