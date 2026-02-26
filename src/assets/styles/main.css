@@ -61,11 +61,13 @@ body {
     text-decoration: none;
     color: var(--cor-texto-branco);
     transition: 0.3s;
+    cursor:pointer;
 }
 
 .cabecalho #menu li a i {
     color: var(--cor-botoes-links);
     padding-right: .4rem;
+    cursor:pointer;
 }
 
 .cabecalho #menu li:hover {
