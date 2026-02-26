@@ -196,6 +196,10 @@ body {
     cursor:pointer;
 }
 
+.principal .info .link-agendar:hover{
+    filter: brightness(80%);
+}
+
 /* --- RODAPÉ --- */
 .rodape {
     display: flex;
@@ -217,6 +221,11 @@ body {
     font-size: 1.2rem;
     color: var(--cor-botoes-links);
     padding-right: .5rem;
+    cursor:pointer;
+}
+
+.rodape i:hover{
+    filter: brightness(80%);
 }
 
 /* --- RESPONSIVIDADE (MOBILE) --- */
