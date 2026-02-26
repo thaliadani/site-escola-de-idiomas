@@ -148,7 +148,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
     color: var(--cor-texto-preto);
     padding: 6rem 4rem;
     gap: .8rem;
