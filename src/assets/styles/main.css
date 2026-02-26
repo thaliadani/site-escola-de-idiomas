@@ -101,11 +101,16 @@ body {
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 .principal .carrossel-imagem.ativa {
     opacity: 1;
-    position: relative;
+    z-index: 2;
+    position: absolute;
 }
 
 .principal .carrossel-imagem img {
@@ -163,9 +168,9 @@ body {
     transform: translateY(-10px);
 }
 
-.principal .info .aulas .tipos .tipo{
-    display:flex;
-    gap:.5rem;
+.principal .info .aulas .tipos .tipo {
+    display: flex;
+    gap: .5rem;
 }
 
 .principal .info .link-agendar {
@@ -207,7 +212,6 @@ body {
         padding: 1rem;
     }
 
-    /* Botão Hambúrguer */
     .cabecalho #btn-menu-hamburguer {
         display: flex;
         align-items: center;
@@ -258,6 +262,10 @@ body {
     .principal .carrossel {
         height: 250px;
         margin-top: 2rem;
+    }
+
+    .principal .carrossel-imagem{
+        width:90%;
     }
 
     .principal .info {
