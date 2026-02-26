@@ -26,9 +26,9 @@
     /* Garante que não fique pequeno demais antes de quebrar */
 }
 
-.formulario-contato .info-adicional .card-contato h3 i{
+.formulario-contato .info-adicional .card-contato h3{
+    font-size: 1.2rem;   
     color: var(--cor-botoes-links);
-    font-size: 1.2rem;
 }
 
 .campo {
