@@ -92,6 +92,7 @@ body {
     justify-content: space-between; /* Joga os botões para as pontas */
     overflow: hidden;
     z-index: 1;
+    gap:.5rem;
 }
 
 .principal .carrossel-imagem {
