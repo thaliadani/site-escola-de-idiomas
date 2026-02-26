@@ -26,6 +26,12 @@
     /* Garante que não fique pequeno demais antes de quebrar */
 }
 
+.formulario-contato .info-adicional .card-contato{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
 .formulario-contato .info-adicional .card-contato i{
     color: var(--cor-botoes-links);
 }
