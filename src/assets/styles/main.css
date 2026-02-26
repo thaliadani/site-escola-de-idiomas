@@ -261,7 +261,6 @@ body {
 
 @media (max-width: 768px) {
     .cabecalho {
-        flex-direction: row-reverse;
         padding: 1rem;
         gap: 1rem;
     }
