@@ -296,7 +296,7 @@ body {
         z-index: 6;
         background-color: var(--cor-de-fundo);
         padding: 1rem;
-        right: -1;
+        right: 1;
         border-radius: .5rem;
         flex-direction: column;
         align-items: flex-start;
