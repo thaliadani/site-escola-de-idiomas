@@ -297,6 +297,7 @@ body {
         height:60px;
         top: 0;
         left: 0;
+        margin-top: 5rem;
         z-index: 1000;
         background-color: var(--cor-de-fundo);
         padding: 1rem;
