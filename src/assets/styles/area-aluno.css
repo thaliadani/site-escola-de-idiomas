@@ -12,6 +12,10 @@
     display: none !important;
 }
 
+.principal .info{
+    align-items:center;
+}
+
 @media (max-width: 768px) {
     .cabecalho {
         padding: 1rem 1.5rem;
@@ -153,3 +157,4 @@
     }
 
 }
+
