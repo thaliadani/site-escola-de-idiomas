@@ -12,8 +12,6 @@
 }
 
 body {
-    position:relative;
-    z-index: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -212,7 +210,7 @@ body {
   align-items: center;
 }
 
-.principal .info .aulas .tipos .tipo{
+.principal .info .aulas .tipos{
     flex-direction:row;
     gap:.5rem;
 }
@@ -298,7 +296,7 @@ body {
         z-index: 2;
         background-color: var(--cor-de-fundo);
         padding: 1rem;
-        right: 0;
+        right: -1;
         border-radius: .5rem;
         flex-direction: column;
         align-items: flex-start;
