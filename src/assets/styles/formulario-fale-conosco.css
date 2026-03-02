@@ -5,16 +5,17 @@
     margin-top: 2rem;
 }
 
-.formulario-contato {
+#formulario-contato {
     background: var(--cor-texto-branco);
     color: var(--cor-texto-preto);
     padding: 2rem;
     border-radius: 1.5rem;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+ 
 }
 
-.formulario-contato,
+#formulario-contato,
 .info-adicional {
     flex: 1 1 400px;
     /* Cresce, encolhe e tem base de 400px */
@@ -31,6 +32,15 @@
 .campo label {
     font-weight: 600;
     margin-bottom: 0.5rem;
+}
+
+.campo input,
+.campo textarea{
+    cursor: text;
+}
+
+.campo select{
+    cursor: pointer;
 }
 
 .campo input,
